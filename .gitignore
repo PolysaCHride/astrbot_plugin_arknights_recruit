@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 插件运行时产物
+.tmp/
+render_cache/
+data/cache/

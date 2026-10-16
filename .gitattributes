@@ -1,0 +1,3 @@
+# 插件会部署到 Linux 上的 AstrBot，统一用 LF 避免换行符问题
+* text=auto eol=lf
+*.png binary

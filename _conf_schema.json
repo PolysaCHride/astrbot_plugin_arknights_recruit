@@ -1,0 +1,50 @@
+{
+  "output_mode": {
+    "type": "string",
+    "description": "输出形式",
+    "hint": "填 image 发送渲染图片（渲染失败会自动降级为文本），填 text 只发纯文本。",
+    "default": "image"
+  },
+  "recruit_time": {
+    "type": "string",
+    "description": "招募时长",
+    "hint": "默认 all，即展示该词条组合在任意时长下可能出现的全部干员（含只在短时长出现的 1★ 机械、2★ 新手）。填具体时间（如 9:00）则只展示该时长能出的星级：3:50 以内 1★~4★，4:00 起 2★~5★，7:40 起 3★~5★。",
+    "default": "all"
+  },
+  "image_show_star": {
+    "type": "bool",
+    "description": "图片中干员名后标注星级",
+    "hint": "开启后显示为「诗怀雅★5」。默认关闭，星级由卡片左侧色条和名字颜色体现。",
+    "default": false
+  },
+  "precise_image_size": {
+    "type": "bool",
+    "description": "图片按内容精确裁切",
+    "hint": "开启后图片宽高会跟着干员数量变化。若你的文转图服务不支持 clip 参数导致图片被裁坏，可关闭此项改为整页截图。",
+    "default": true
+  },
+  "max_image_height": {
+    "type": "int",
+    "description": "图片高度上限（像素）",
+    "hint": "超过这个高度就不画图了，直接发文本，避免生成一张超长图片。",
+    "default": 8000
+  },
+  "text_chunk_limit": {
+    "type": "int",
+    "description": "文本单条长度上限",
+    "hint": "结果过长时按组合切分成多条消息发送，避免被平台截断。",
+    "default": 1200
+  },
+  "auto_update": {
+    "type": "bool",
+    "description": "自动更新干员数据",
+    "hint": "开启后插件启动时会检查一次上游公招数据，超过间隔天数就自动拉取。",
+    "default": false
+  },
+  "update_interval_days": {
+    "type": "int",
+    "description": "自动更新间隔（天）",
+    "hint": "仅在开启自动更新时生效。",
+    "default": 7
+  }
+}

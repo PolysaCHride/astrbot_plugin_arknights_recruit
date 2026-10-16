@@ -1,0 +1,14 @@
+name: astrbot_plugin_arknights_recruit
+display_name: 明日方舟公开招募计算
+desc: 计算《明日方舟》公开招募词条组合可能出现的干员与保底星级，支持"高姿/高资、回费、防御、支援器械"等常用简写。
+version: "1.0.0"
+author: PolysaCHride
+repo: https://github.com/PolysaCHride/astrbot_plugin_arknights_recruit
+support_platforms:
+  - aiocqhttp
+  - qq_official
+  - telegram
+  - discord
+  - lark
+  - wecom
+astrbot_version: ">=4.0,<5"
